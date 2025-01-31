@@ -676,6 +676,25 @@
     }
   </style>
   
+  <style>
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    .typewriter {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid;
+      animation: 
+        typing 2s steps(40, end),
+        blink .75s step-end 5;
+    }
+  </style>
 </head>
 
 <body class="__className_d65c78 flex flex-col items-center bg-primary text-primary-foreground"><!--$-->
@@ -786,14 +805,15 @@
                 $APSK is soon launching on testnet!</div>
             </a>
             <div class="flex flex-col gap-[5px]">
-              <p class="text-[62px] leading-[75px] text-left font-medium">Blockchain</p><span
-                class="index-module_type__E-SaG text-[48px] leading-[58.09px] text-left font-medium primary-gradient">Meets
+              <p class="text-[62px] leading-[75px] text-left font-medium">Blockchain</p>
+              <span 
+                class="typewriter index-module_type__E-SaG text-[48px] leading-[58.09px] text-left font-medium primary-gradient">Meets
                 App Crowdfunding</span>
             </div>
           </div>
           <div class="flex flex-col gap-[40px] items-start">
-            <p class="w-full lg:max-w-[80%] text-[17px] text-secondaryText font-medium leading-[20.57px] text-left">
-              World’s first blockchain-based revenue share crowdfunding platform.</p>
+            <p class="w-full lg:max-w-[90%] text-[17px] text-secondaryText font-medium leading-[20.57px] text-left">
+              World's first blockchain-based revenue share crowdfunding platform.</p>
             <div class="flex items-center gap-[15px]"><a target="_parent"
                 class="nav-btn w-fit flex items-center gap-[10px] p-[15px] rounded-[10px] bg-secondary-blue-tone text-secondary-blue text-[15px] font-semibold leading-[18.15px] hover:btn-hover !bg-secondary-blue !text-backing"
                 href="#">Start Building</a>
@@ -837,8 +857,8 @@
     <div class="relative flex flex-col gap-[40px] py-[120px]"><img alt="Community Background" fetchpriority="high"
       width="1920" height="1315" decoding="async" data-nimg="1" class="absolute top-0 left-0 h-full w-full -z-10"
       src="./assets/images/community-bg.png" style="color: transparent;">
-    <p class="max-w-[80%] text-[38px] font-medium leading-[45.99px] text-center mx-auto px-[20px]">Empower best talent
-      regardless of access to financing, support inclusive app development ecosystem, drive the app revolution!</p>
+    <p class="max-w-[80%] text-[38px] font-medium leading-[45.99px] text-center mx-auto px-[20px]">
+      Empower top talent, break finacial barriers, fuel the app revolution!</p>
 
   </div>
     <div class="w-[calc(100%-30px)] mt-[30px] md:w-[calc(100%-40px)] max-w-[1200px] mx-auto flex flex-col gap-[150px]">
@@ -846,15 +866,13 @@
         <section class="grid md:grid-cols-2 gap-[30px]">
           <div
             class="relative flex flex-col items-start p-[20px] bg-overlay rounded-[30px] items-center border border-secondary-purple-tone rounded-[30px] !p-0">
-            <div tabindex="0"><img alt="Media" fetchpriority="high" width="760" height="860" decoding="async"
+            <div tabindex="0"><img alt="Media" fetchpriority="high" decoding="async"
                 data-nimg="1" class="w-full " src="./assets/images/rwa.png" style="color: transparent;">
               <div class="flex flex-col items-center gap-[20px] -mt-[170px] !p-[20px]">
                 <p class="text-[20px] font-semibold leading-[24.2px] text-center ">Rapid financing and resources for app
                   developers with minimum effort</p>
-                <p class="text-[15px] font-medium leading-[18.15px] text-subText text-center whitespace-pre-wrap">
-                  Appstake galery features your passion and potential of your work inviting investors to share in your
-                  success, powered by blockchain and smart contracts.
-                </p><a target="_blank"
+                <p class="text-[15px] font-medium leading-[18.15px] text-subText text-center whitespace-pre-wrap">Appstake galery features your passion and potential of your work inviting investors to share in your success, powered by blockchain and smart contracts.</p>
+                <a target="_blank"
                   class="nav-btn w-fit flex items-center gap-[10px] p-[15px] rounded-[10px] bg-secondary-blue-tone text-secondary-blue text-[15px] font-semibold leading-[18.15px] hover:btn-hover bg-secondary-purple-tone text-secondary-purple"
                   href="#">Learn
                   More<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -875,9 +893,8 @@
               <div class="flex flex-col items-center gap-[20px] -mt-[170px] !p-[20px]">
                 <p class="text-[20px] font-semibold leading-[24.2px] text-center ">Early stage revenue share
                   opportunities for investors with minimum effort</p>
-                <p class="text-[15px] font-medium leading-[18.15px] text-subText text-center whitespace-pre-wrap">Share
-                  in the success of app ventures with transparency of blackchain and automation of smart contracts.</p>
-                </br><a target="_blank"
+                <p class="text-[15px] font-medium leading-[18.15px] text-subText text-center whitespace-pre-wrap">Share in the success of app ventures with transparency of blockchain and automation of smart contracts.</p>
+                <a target="_blank"
                   class="nav-btn w-fit flex items-center gap-[10px] p-[15px] rounded-[10px] bg-secondary-blue-tone text-secondary-blue text-[15px] font-semibold leading-[18.15px] hover:btn-hover bg-secondary-purple-tone text-secondary-purple"
                   href="#">Learn
                   More<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
