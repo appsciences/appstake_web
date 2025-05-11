@@ -11,9 +11,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Create deployment directory
+        run: mkdir -p deploy
+        
+      - name: Copy required files
+        run: |
+          cp index.html deploy/
+          cp -r assets deploy/
+          
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_APPSTAKE_WEB }}
           channelId: live
           projectId: appstake-web
+          entryPoint: deploy
