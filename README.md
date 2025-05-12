@@ -7,3 +7,7 @@ Currently only /index.html and /assets are used. There is also a Flutter project
 ## Deployment
 
 Github actions in .github deploy /index.html and /assets to firebase hosting glevik@gmail.com, appstake_web
+
+## Issues
+
+Github deploy action doesn't work cuz it can't find firebase.json (which should not be checked in in the first place). May be env variables?
