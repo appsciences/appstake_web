@@ -1,4 +1,4 @@
-# appstake web site
+# applove web site
 
 ## Project Structure
 
