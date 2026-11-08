@@ -19,7 +19,7 @@ jobs:
         
       - name: Copy required files
         run: |
-          cp index.html deploy/
+          cp index.html coming-soon.html deploy/
           cp -r assets deploy/
           
       - uses: FirebaseExtended/action-hosting-deploy@v0
